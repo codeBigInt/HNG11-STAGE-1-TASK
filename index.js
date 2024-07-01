@@ -4,9 +4,9 @@ const now = new Date()
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayOfWeek = now.getUTCDay()
 
-const utcTimeString =  now.toUTCString()
+const utcTimeString =  now.getTime()
 
-currentTimeUTC.textContent = `${utcTimeString.slice(4, -3)} UTC`
+currentTimeUTC.textContent = utcTimeString
 
 currentDay.textContent = `${dayNames[dayOfWeek].toString()},`
 
