@@ -16,6 +16,20 @@ body{
     padding: 2em;
 }
 
+/* .imageHolder{
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imageHolder img{
+    object-fit: contain;
+
+} */
 .container, .myDetails, #content{
     display: flex;
     flex-direction: column;
@@ -24,7 +38,9 @@ body{
     padding-bottom: 50px;
 }
 .myDetails{
-    gap: 1em;
+    /* display: flex; */
+    gap: 1.5em;
+    /* align-items: flex-end; */
 }
 #currentDay{
     color: red;
