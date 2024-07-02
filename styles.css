@@ -24,9 +24,9 @@ body{
 }
 .container{
     overflow: hidden;
-    margin-top: -30%;
 }
 .myDetails{
+    margin-top: -200px;
     gap: 1.5em;
 }
 #currentDay{
@@ -73,8 +73,8 @@ body{
 @media screen and (min-width: 769px) {
     .container{
         width: 90%;
-        margin-top: -10%;
     }
+    
     .imageHolder{
         width: 60%;
     }
