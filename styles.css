@@ -15,21 +15,6 @@ body{
     width: 100%;
     padding: 2em;
 }
-
-/* .imageHolder{
-    width: 30%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.imageHolder img{
-    object-fit: contain;
-
-} */
 .container, .myDetails, #content{
     display: flex;
     flex-direction: column;
@@ -37,10 +22,12 @@ body{
     width: 100%;
     padding-bottom: 50px;
 }
+.container{
+    overflow: hidden;
+    margin-top: -30%;
+}
 .myDetails{
-    /* display: flex; */
     gap: 1.5em;
-    /* align-items: flex-end; */
 }
 #currentDay{
     color: red;
@@ -62,6 +49,19 @@ body{
 }
 #content{
     gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.imageHolder{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    align-self: flex-start;
+}
+.imageHolder img{
+    object-fit: contain;
 }
 
 /* Media Queries for Tablet and Desktop */
@@ -73,6 +73,10 @@ body{
 @media screen and (min-width: 769px) {
     .container{
         width: 90%;
+        margin-top: -10%;
+    }
+    .imageHolder{
+        width: 60%;
     }
 }
 @media screen and (min-width: 1024px) {
